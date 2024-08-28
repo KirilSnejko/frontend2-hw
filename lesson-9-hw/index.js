@@ -10,6 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const li = document.createElement("li");
     const taskValue = inputTask.value;
 
+    const createLi = createNewTask(li, taskValue);
+
+    ul.appendChild(createLi);
+    inputTask.value = "Например, новая задача";
+  }
+
+  function createNewTask(li, taskValue) {
     if (taskValue === "") {
       errorText.textContent = "Поле не может быть пустым";
       inputTask.value = "Например, новая задача";
@@ -19,15 +26,25 @@ document.addEventListener("DOMContentLoaded", function () {
         "beforeend",
         `
           <input type="checkbox" class="task-checkbox">
-          ${taskValue}
+        `
+      );
+      const input = document.createElement("input");
+      input.type = "text";
+      input.value = taskValue;
+      input.readOnly = true;
+      input.classList.add("inputTask");
+      li.appendChild(input);
+
+      li.insertAdjacentHTML(
+        "beforeend",
+        `
           <button class="remove-button">[x]</button>
           <button class="edit-button">[edit]</button>
         `
       );
       errorText.textContent = "";
     }
-    ul.appendChild(li);
-    inputTask.value = "Например, новая задача";
+    return li;
   }
 
   class ManagerEvents {
@@ -38,11 +55,12 @@ document.addEventListener("DOMContentLoaded", function () {
     check(event) {
       const checkbox = event.target;
       const li = checkbox.parentElement;
+      const input = li.querySelector(".inputTask");
       if (checkbox.classList.contains("task-checkbox")) {
         if (checkbox.checked) {
-          li.style.textDecoration = "line-through";
+          input.classList.add("line-through");
         } else {
-          li.style.textDecoration = "none";
+          input.classList.remove("line-through");
         }
       }
     }
@@ -55,7 +73,24 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    edit(event) {}
+    edit(event) {
+      const button = event.target;
+      const li = button.parentElement;
+      const input = li.querySelector(".inputTask");
+
+      if (button.classList.contains("edit-button")) {
+        if (button.textContent === "[edit]") {
+          input.readOnly = false;
+          input.classList.add("editTask");
+          input.focus();
+          button.textContent = "[save]";
+        } else {
+          input.readOnly = true;
+          button.textContent = "[edit]";
+          input.classList.remove("editTask");
+        }
+      }
+    }
 
     onClick(event) {
       this.check(event);
