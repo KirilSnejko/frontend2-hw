@@ -1,0 +1,86 @@
+nav {
+  text-align: center;
+}
+header {
+  background-image: linear-gradient(90deg, grey,#2471A3,#1A5276);
+  padding-bottom: 1rem;
+}
+article {
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+  padding-right: 1rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.main_container form span {
+  display: block;
+}
+.main_container form span:first-of-type {
+  color: #1A5276;
+  font-weight: bold;
+}
+form {
+  padding-top: 1rem;
+  min-width: 250px;
+}
+.main_container section h3 {
+  color: #1A5276;
+}
+.main_container {
+  display: flex;
+}
+.card ul {
+  list-style-type: '\203A';
+  margin-block-start: 0;
+  padding-inline-start: 2rem;
+}
+.card li {
+  padding-left: 0.5rem;
+}
+.sections {
+  display: flex;
+  gap: 8px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  border: solid 1px #1A5276 ;
+  border-radius: 10px;
+  min-width: 30%;
+  flex-basis: 200px;
+  margin-top: 10px;
+  box-shadow: 3px 3px 5px grey;
+  justify-content: space-between;
+}
+.card img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.card h3 {
+  margin-left: 0.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .main_container {
+    flex-direction: column;
+  }
+  .main_container form span {
+    display:inline-block;
+    padding-right: 1rem;
+  }
+  .main_container form {
+    text-align: center;
+  }
+  .card {
+    min-width: 45%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .card {
+    min-width: 95%;
+  }
+}
