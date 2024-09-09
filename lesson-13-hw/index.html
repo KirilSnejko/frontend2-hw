@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div id="logo-title"><span>netflix</span>roulette</div>
+    <button id="addMovieBut">+ ADD MOVIE</button>
+    <div id="searchArea">
+      <h1 id="searchLogo">FIND YOUR MOVIE</h1>
+      <input type="text" id="searchInput" placeholder="What do you want to watch?">
+      <button id="search-btn" type="submit">SEARCH</button>
+    </div>
+  </header>
+  <main>
+    <section id="filters">
+      <div id="results-filter">
+        <div class="active-search">ALL</div>
+        <div>DOCUMENTARY</div>
+        <div>COMEDY</div>
+        <div>HORROR</div>
+        <div>CRIME</div>
+      </div>
+      <div id="results-sort">
+        <div>SORT BY</div>
+        <div>RELEASE DATE</div>
+        <div id="flag-down">
+          <svg width="9.655273" height="6.462891" viewBox="0 0 9.65527 6.46289" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path id="Fill 1" d="M0.24 1.65L4.06 6.11C4.46 6.58 5.18 6.58 5.58 6.11L9.41 1.65C9.96 1 9.5 0 8.65 0L1 0C0.14 0 -0.32 1 0.24 1.65Z" fill="#F65261" fill-opacity="1.000000" fill-rule="evenodd"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section id="movies-counter"><span>39</span> movies found</section>
+    <section id="cards">
+      <div class="card">
+        <div class="card-image pulp-fiction"></div>
+        <div class="title-and-year">
+          <div class="card-title">Pulp Fiction</div>
+          <div class="card-year">2004</div>
+        </div>
+        <div class="gender">Action & Adventure</div>
+      </div>
+      <div class="card">
+        <div class="card-image bohemian-rhapsody"></div>
+        <div class="title-and-year">
+          <div class="card-title">Bohemian Rhapsody</div>
+          <div class="card-year">2003</div>
+        </div>
+        <div class="gender">Drama, Biography, Music</div>
+      </div>
+      <div class="card">
+        <div class="card-image kill-bill"></div>
+        <div class="title-and-year">
+          <div class="card-title">Kill Bill: Vol 2</div>
+          <div class="card-year">1994</div>
+        </div>
+        <div class="gender">Oscar winning Movie</div>
+      </div>
+      <div class="card">
+        <div class="card-image avengers"></div>
+        <div class="title-and-year">
+          <div class="card-title">Avengers: War of Infinity</div>
+          <div class="card-year">2004</div>
+        </div>
+        <div class="gender">Action & Adventure</div>
+      </div>
+      <div class="card">
+        <div class="card-image inception"></div>
+        <div class="title-and-year">
+          <div class="card-title">Inception</div>
+          <div class="card-year">2003</div>
+        </div>
+        <div class="gender">Action & Adventure</div>
+      </div>
+      <div class="card">
+        <div class="card-image reservoir-dogs"></div>
+        <div class="title-and-year">
+          <div class="card-title">Reservoir dogs</div>
+          <div class="card-year">1994</div>
+        </div>
+        <div class="gender">Oscar winning Movie</div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="footer-title">
+      <span>netflix</span>roulette
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal-overlay">
+      <div class="modal-window">
+        <div class="modal-header">
+          <span class="modal-title">ADD MOVIE</span>
+          <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="reset">RESET</button>
+          <button type="submit">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
