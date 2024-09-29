@@ -1,0 +1,23 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+div#errorText {
+  color: red;
+  font-size: smaller;
+}
+.inputTask {
+  background-color: transparent;
+  border: none; 
+  outline: none; 
+  color: black; 
+  font-size: 16px; 
+ 
+}
+.line-through {
+  text-decoration: line-through;
+}
+.editTask {
+  border: solid 1px;
+}
