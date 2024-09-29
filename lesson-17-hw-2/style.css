@@ -1,0 +1,23 @@
+
+form {
+  margin: 15px 20px;
+}
+input#input-task {
+  width: 50%;
+  height: 30px;
+}
+li {
+  margin: 5px 0;
+}
+button#send-button {
+  height: 35px;
+  width: 100px;
+}
+button {
+  margin: 0 2px;
+  width: 50px;
+}
+#search-task {
+  width: 50%;
+  margin-top: 20px;
+}
