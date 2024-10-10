@@ -23,7 +23,7 @@ header {
   height: 430px;
   position: relative;
   margin: 0 auto;
-  background-image: url('images/page1/headerBackground.png');
+  background-image: url('../public/images/page1/headerBackground.png');
   /* background-repeat: no-repeat; */
   background-position: -50px -100px;
 }
@@ -154,24 +154,24 @@ div.active-search {
   background-size:cover;
 }
 .card .pulp-fiction {
-  background-image: url('images/page1/pulpFiction.png');
+  background-image: url('../public/images/page1/pulpFiction.png');
 }
 .card .bohemian-rhapsody {
-  background-image: url('images/page1/bohemianRhapsody.png');
+  background-image: url('../public/images/page1/bohemianRhapsody.png');
 }
 .card .kill-bill {
-  background-image: url('images/page1/killBill.png');
+  background-image: url('../public/images/page1/killBill.png');
 }
 .card .avengers {
-  background-image: url('images/page1/avengers.png');
+  background-image: url('../public/images/page1/avengers.png');
   background-size: 200%;
   background-position: center;
 }
 .card .inception {
-  background-image: url('images/page1/inception.png');
+  background-image: url('../public/images/page1/inception.png');
 }
 .card .reservoir-dogs {
-  background-image: url('images/page1/reservoirDogs.png');
+  background-image: url('../public/images/page1/reservoirDogs.png');
   background-position: right;
   background-size: 210%;
   background-repeat: no-repeat;
@@ -527,7 +527,7 @@ header.description-movie {
   gap: 20px;
 }
 body > header > div.full-card > div.card-image.pulp-fiction {
-  background-image: url('images/page1/pulpFiction.png');
+  background-image: url('../public/images/page1/pulpFiction.png');
   width: 250px;
   height: 100%;
 }
