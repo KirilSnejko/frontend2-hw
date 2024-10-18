@@ -151,31 +151,8 @@ div.active-search {
 .card-image {
   width: 300px;
   height: 420px;
-  background-size:cover;
 }
-.card .pulp-fiction {
-  background-image: url('../public/images/page1/pulpFiction.png');
-}
-.card .bohemian-rhapsody {
-  background-image: url('../public/images/page1/bohemianRhapsody.png');
-}
-.card .kill-bill {
-  background-image: url('../public/images/page1/killBill.png');
-}
-.card .avengers {
-  background-image: url('../public/images/page1/avengers.png');
-  background-size: 200%;
-  background-position: center;
-}
-.card .inception {
-  background-image: url('../public/images/page1/inception.png');
-}
-.card .reservoir-dogs {
-  background-image: url('../public/images/page1/reservoirDogs.png');
-  background-position: right;
-  background-size: 210%;
-  background-repeat: no-repeat;
-}
+
 .title-and-year {
   display: flex;
   justify-content: space-between;

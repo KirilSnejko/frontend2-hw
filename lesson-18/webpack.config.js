@@ -16,7 +16,9 @@ module.exports = {
 		path: path.resolve(PATHS.DIST),
 		clean: true,
 	},
-
+	resolve: {
+		extensions: ['.js', '.css', '.scss'],
+	},
 	module: {
 		rules: [
 			{
@@ -32,7 +34,7 @@ module.exports = {
 			{
 				test: /\.s[ac]ss$/i,
 				use: [
-					'style-loader',
+					MiniCssExtractPlugin.loader,
 					'css-loader',
 					{
 						loader: 'sass-loader',
@@ -44,7 +46,7 @@ module.exports = {
 			},
 			{
 				test: /\.css$/i,
-				use: [MiniCssExtractPlugin.loader, 'style-loader', 'css-loader'],
+				use: [MiniCssExtractPlugin.loader, 'css-loader'],
 			},
 			{
 				test: /\.(png|jpe?g|gif|svg)$/i,
@@ -58,7 +60,7 @@ module.exports = {
 			inject: 'body',
 		}),
 		new MiniCssExtractPlugin({
-			filename: '[name].css',
+			filename: '[name].[fullhash].css',
 			chunkFilename: '[id].css',
 		}),
 	],

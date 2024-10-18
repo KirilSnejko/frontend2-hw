@@ -1,4 +1,4 @@
-import "./style.scss";
+import { initApp } from './api/app';
+import './style.scss';
 
-console.log("hello from webpack1");
-alert("test1");
+initApp();
