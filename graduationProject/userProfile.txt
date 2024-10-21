@@ -1,0 +1,9 @@
+{
+  "sub": "google-oauth2|115214636143705079673",
+  "given_name": "Kiril",
+  "family_name": "Sniazhko",
+  "nickname": "1830398",
+  "name": "Kiril Sniazhko",
+  "picture": "https://lh3.googleusercontent.com/a/ACg8ocKb7XZ4zdhe1Fm7yalSaimj8ZGCX9LgTq_2r3iNKLV6IV6GzpDY=s96-c",
+  "updated_at": "2024-10-17T21:23:44.430Z"
+}

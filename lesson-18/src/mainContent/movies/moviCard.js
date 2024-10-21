@@ -1,4 +1,5 @@
 import { getYearFromMovieRealizeDate } from '../../utils/date';
+import defaultPoster from '../../../public/images/page1/bohemianRhapsody.png';
 
 const movieCardTemplate = document.querySelector('#movieCardTemplate');
 
@@ -14,6 +15,17 @@ export const createMovieCard = (movieData) => {
 
 	movieCardImage.src = movieData.poster_path;
 	movieCardImage.alt = movieData.title;
+
+	movieCardImage.addEventListener(
+		'error',
+		() => {
+			movieCardImage.src = defaultPoster;
+		},
+		{
+			once: true,
+		},
+	);
+
 	movieCardTitle.textContent = movieData.title;
 	movieCardIYear.textContent = getYearFromMovieRealizeDate(
 		movieData.release_date,
